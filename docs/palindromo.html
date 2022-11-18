@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./estilos.css"> 
+  </head>
+</head>
+<header>
+    <div class="container-fluid" id="titulo" style="background-color: #000000; color: aliceblue;">
+        <div class="row">
+            <div class="col-3">
+                <img src="./imagenes/unir.png" alt="Unir" height="100" width="300">
+            </div> 
+            <div class="col">
+                <h2 style="padding-top: 0.7cm ;">Laboratorio. Tecnologías JavaScript y AJAX</h2>   
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <script src="./JavaScript.js"></script>
+    <nav class="navbar navbar-expand-lg bg-light" style="padding:0">
+        <div class="container-fluid" style="background-color:rgb(111, 97, 240); color: rgb(245, 8, 8);">
+          <a class="navbar-brand" href="./index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./palindromo.html">Palíndromo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./numero_mayor.html">Numero Mayor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./identifica_vocales.html">Identifica Vocales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contar_vocales.html">Contar Vocales</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div style="padding: 1cm; color: rgb(46, 45, 49); background-color:rgb(255, 255, 255); height: 500px; font-size: 0.6cm">
+        <h3>Palindromo</h3>
+        <p>Un Palindromo es una palabra o frase que se lee igual de izquierda a derecha que de derecha a izquierda.</p><br>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Digita palabra o frase para validar:</label>
+          <input class="form-control form-control-lg" type="text" placeholder="Digite aqui..." aria-label=".form-control-lg example" id="palabra">
+        </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3" id="boton1" onclick="palindromo()">Validar</button>
+          </div>
+        </form>
+        <small id="respuesta" style="color:rgb(165, 12, 12);"></small>
+    </div>
+</body>
+</html>

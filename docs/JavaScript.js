@@ -75,3 +75,37 @@ function cont_vacales(){
 
     document.getElementById("respuesta").innerHTML=respuesta;
 }
+
+function creaObjetoAjax () { 
+    var obj; 
+    if (window.XMLHttpRequest) { 
+       obj=new XMLHttpRequest();
+       }
+    else { 
+       obj=new ActiveXObject(Microsoft.XMLHTTP);
+       }
+    return obj; 
+    }
+    
+docTxt=creaObjetoAjax(); 
+docTxt.open("GET","url.txt",true); 
+docTxt.onreadystatechange=leerArchivo; 
+docTxt.send() 
+
+function leerArchivo() {  
+    if (docTxt.readyState == 4) { 
+       if (docTxt.status == 200) {  
+          texto=docTxt.responseText; 
+          }
+       }
+    }
+
+function verTexto() {
+    ver=document.getElementById("respuesta");
+    ver.innerHTML=texto;
+    }
+		 
+function ocultarTexto() {
+    nover=document.getElementById("respuesta");
+    nover.innerHTML="";
+    }
